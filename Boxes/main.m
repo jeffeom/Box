@@ -18,8 +18,6 @@ int main(int argc, const char * argv[]) {
         
         Box *box2 = [[Box alloc] initWithHeight:5 width:4 andLength:3];
         
-//        NSLog(@"Box2 will fit %i times in the Box", [box howMany:box2])
-        
         if ([box volume] >= [box2 volume]){
             NSLog(@"Box2 will fit %i times in the Box", [box howMany:box2]);
         }else{
